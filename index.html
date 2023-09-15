@@ -61,7 +61,7 @@
             controls.addEventListener('change', renderer);
 
             let loader = new THREE.GLTFLoader();
-            loader.load('./animations/coracao.glb', function(gltf){
+            loader.load('./astronauta.glb', function(gltf){
                 //Reduce the Car size by half
                 car = gltf.scene.children[0];
                 car.scale.set(0.5, 0.5, 0.5);
