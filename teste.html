@@ -59,6 +59,16 @@
       width: 100%;
       height: 100%;
     }
+    .luas {
+    display: flex;
+    justify-content: space-between; /* Espaço uniforme entre as luas */
+    align-items: center;
+  }
+
+  .lua {
+    width: 30%; /* Ajuste o tamanho das luas conforme necessário */
+  }
+
 
 
         
@@ -87,6 +97,20 @@
   </nav>
 <br>
 <br>
+
+<div class="planeta">
+  <div class="iframe-container">
+    <iframe src="https://solarsystem.nasa.gov/gltf_embed/2369" width="100%" height="450px" frameborder="0"></iframe>
+  </div>
+  <center><p style="color:white;">Mercúrio<a class="reference" href=""></a></p></center>
+  <div class="luas">
+    <div class="lua">
+      <iframe src="https://solarsystem.nasa.gov/gltf_embed/2366&#39" width="100%" height="150px" frameborder="0"></iframe>
+      <center><p style="color:white;">Lua<a class="reference" href=""></a></p></center>
+    </div>
+    <!-- Adicione mais divs .lua para mais luas, se necessário -->
+  </div>
+</div>
 
 
 <div class="planeta">
