@@ -61,6 +61,8 @@
     }
 
 
+
+
         
         </style>
 </head>
@@ -88,7 +90,9 @@
 <br>
 <br>
 
-
+<div id="loading-spinner">
+  <img src="https://espacial.ifrn.edu.br/wp-content/uploads/2022/08/cropped-cropped-ct-espacial-logo-horizontal-completo_Prancheta-1-1-1536x507.png" alt="Logo" style="width: 200px;">
+</div>
 
 
 <div class="planeta">
@@ -213,6 +217,29 @@
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+<script>
+  $(document).ready(function () {
+      // Ocultar a página de loading
+      $("#loading-spinner").hide();
+
+      // Controlar o carregamento dos iframes
+      $("iframe").on("load", function () {
+        // Verificar se todos os iframes estão carregados
+        var allIframesLoaded = true;
+        $("iframe").each(function () {
+          if (!this.contentWindow || !this.contentWindow.document) {
+            allIframesLoaded = false;
+            return false; // Sair do loop
+          }
+        });
+
+        // Se todos os iframes estiverem carregados, mostrar o conteúdo principal
+        if (allIframesLoaded) {
+          $(".planeta").show();
+        }
+      });
+    });
+</script>
 
 
 <!--Não é necessário ter dois módulos do Jquery, talvez essa seja a causa da lentidão-->
