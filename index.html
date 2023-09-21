@@ -297,7 +297,11 @@
 
         document.addEventListener('mouseup', () => {
             isDragging = false;
+        // Quando o usuário soltar o mouse, defina a nova posição como posição inicial
+            offsetX = modelX;
+            offsetY = modelY;
         });
+
   </script>
 
 
