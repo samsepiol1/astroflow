@@ -176,8 +176,7 @@
     <p style="color:white;">Urano<a class="reference" href="">
       <br>
       <a class="btn btn-primary" href="" target="_blank">
-        <i class="fa-solid fa-user">
-        </i>
+        <i class="fa-solid fa-user-astronaut"></i>
       </a>
   </a>
 </p>
@@ -201,15 +200,19 @@
 
 <!--Organizar dados para uma API, adicionar os métodos e outras funções para que suporte os verbos GET, POST-->
 
-<!--Documentação do model viewer-->
 
-<model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
-              ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
-              alt="Um modelo 3D do astronauta para manipulção dentro do espaço"
-              ar
-              auto-rotate
-              camera-controls>
-</model-viewer>
+
+<div id="modelContainer" style="width: 500px; height: 500px;">
+  <model-viewer id="myModel"
+                src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
+                alt="Um modelo 3D do astronauta para manipulação dentro do espaço"
+                ar
+                auto-rotate
+                camera-controls>
+  </model-viewer>
+</div>
+
 
 
 
@@ -267,6 +270,35 @@
       });
     });
 </script>
+
+<script>
+        // Lógica de movimentação pelo espaço completo do site
+        const modelViewer = document.querySelector('#myModel');
+        const modelContainer = document.querySelector('#modelContainer');
+
+        let isDragging = false;
+        let offsetX, offsetY;
+
+        modelContainer.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            offsetX = e.clientX - modelContainer.getBoundingClientRect().left;
+            offsetY = e.clientY - modelContainer.getBoundingClientRect().top;
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+
+            const x = e.clientX - offsetX;
+            const y = e.clientY - offsetY;
+
+            modelViewer.style.left = x + 'px';
+            modelViewer.style.top = y + 'px';
+        });
+
+        document.addEventListener('mouseup', () => {
+            isDragging = false;
+        });
+  </script>
 
 
 
