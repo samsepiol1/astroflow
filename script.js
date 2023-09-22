@@ -33,4 +33,24 @@ $(document).ready(function () {
     });
   });
 
-  
+  // Verificação WebGL
+  function verificaSuporteWebGL() {
+    try {
+        const canvas = document.createElement('canvas');
+        const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+        if (gl && gl instanceof WebGLRenderingContext) {
+            return true;
+        } else {
+            return false;
+        }
+    } catch (e) {
+        return false;
+    }
+}
+
+// Verifique o suporte e exiba uma mensagem ao usuário
+if (verificaSuporteWebGL()) {
+    console.log('O seu dispositivo suporta WebGL. Você pode visualizar objetos 3D.');
+} else {
+    console.log('O seu dispositivo não suporta WebGL. Recomendamos um navegador ou dispositivo com suporte a WebGL para visualizar objetos 3D.');
+}
