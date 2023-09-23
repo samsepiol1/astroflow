@@ -1,13 +1,13 @@
 // Array com informações sobre os planetas
 const planetas = [
-    { nome: 'Mercúrio', url: 'https://solarsystem.nasa.gov/gltf_embed/2369&#39', qrCodeUrl: 'https://qe25e.zappar.io/8386314047137618792/v3/'},
-    { nome: 'Vênus', url: 'https://solarsystem.nasa.gov/gltf_embed/2343&#39' },
-    { nome: 'Terra', url: 'https://solarsystem.nasa.gov/gltf_embed/2393&#39' },
-    { nome: 'Marte', url: 'https://solarsystem.nasa.gov/gltf_embed/2372&#39' },
-    { nome: 'Júpiter', url: 'https://solarsystem.nasa.gov/gltf_embed/2375&#39' },
-    { nome: 'Saturno', url: 'https://solarsystem.nasa.gov/gltf_embed/2355&#39'},
-    { nome: 'Urano', url: 'https://solarsystem.nasa.gov/gltf_embed/2344&#39' },
-    { nome: 'Netuno', url: 'https://solarsystem.nasa.gov/gltf_embed/2364&#39' }
+    { nome: 'Mercúrio', url: 'https://solarsystem.nasa.gov/gltf_embed/2369&#39', qrCodeUrl: './QrCodes/mercury_qr.png'},
+    { nome: 'Vênus', url: 'https://solarsystem.nasa.gov/gltf_embed/2343&#39', qrCodeUrl: './QrCodes/venus_qr.png'},
+    { nome: 'Terra', url: 'https://solarsystem.nasa.gov/gltf_embed/2393&#39', qrCodeUrl: './QrCodes/earth.png'},
+    { nome: 'Marte', url: 'https://solarsystem.nasa.gov/gltf_embed/2372&#39' , qrCodeUrl: './QrCodes/' },
+    { nome: 'Júpiter', url: 'https://solarsystem.nasa.gov/gltf_embed/2375&#39' , qrCodeUrl: './QrCodes/'},
+    { nome: 'Saturno', url: 'https://solarsystem.nasa.gov/gltf_embed/2355&#39' , qrCodeUrl: './QrCodes/'},
+    { nome: 'Urano', url: 'https://solarsystem.nasa.gov/gltf_embed/2344&#39' , qrCodeUrl: './QrCodes/'},
+    { nome: 'Netuno', url: 'https://solarsystem.nasa.gov/gltf_embed/2364&#39' , qrCodeUrl: './QrCodes/'}
 
 
     // Adicione informações para os outros planetas aqui
@@ -38,22 +38,12 @@ const planetas = [
       p.textContent = planeta.nome;
       p.style.position = 'center';
 
-      // Criar uma imagem do código QR
-      const qrCodeImage = document.createElement('img');
-      qrCodeImage.alt = 'Código QR';
-      qrCodeImage.style.width = '100px'; // Tamanho personalizado
-      qrCodeImage.style.height = '100px'; // Tamanho personalizado
-
-      // Usar a biblioteca "qrious" para gerar o QR code
-      const qr = new QRious({
-          value: planeta.qrCodeUrl,
-          size: 100 // Tamanho personalizado
-      });
-
-      qrCodeImage.src = qr.toDataURL();
-
-      p.appendChild(document.createElement('br'));
-      p.appendChild(qrCodeImage);
+      const img = document.createElement('img')
+      img.style.position = 'center'
+      img.style.height = '100px'
+      img.style.width = '100px'
+      img.src = planeta.qrCodeUrl
+      
 
 
 
@@ -61,6 +51,7 @@ const planetas = [
       divPlaneta.appendChild(divIframeContainer);
       divPlaneta.appendChild(document.createElement('center'));
       divPlaneta.appendChild(p);
+      divPlaneta.appendChild(img)
 
       planetasContainer.appendChild(divPlaneta);
     });
