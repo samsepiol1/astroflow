@@ -2,9 +2,9 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Astro Flow</title>
+    <title>AstroFlow</title>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
@@ -12,217 +12,77 @@
     -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <!--Ajustar imagem conforme o menu-->
-    <a class="navbar-brand" href="">AstroFlow</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Autores<span class="sr-only">(current)</span></a>
-        </li>
-        
-        <li class="nav-item active">
-        <a class="nav-link" href="form_me.html">Sobre o Projeto<span class="sr-only">Descubra Música</span></a>
-      </li>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!--Ajustar imagem conforme o menu-->
+        <a class="navbar-brand" href="">AstroFlow</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       
-      </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Autores<span class="sr-only">(current)</span></a>
+            </li>
+            
+            <li class="nav-item active">
+            <a class="nav-link" href="about.html">Sobre o Projeto<span class="sr-only">Descubra o Espaço</span></a>
+          </li>
+          
+          </ul>
+        </div>
+      </nav>
+    <br>
+    <br>
+    
+    <div id="loading-spinner">
+      <img src="https://espacial.ifrn.edu.br/wp-content/uploads/2022/08/cropped-cropped-ct-espacial-logo-horizontal-completo_Prancheta-1-1-1536x507.png" alt="Logo" style="width: 200px;">
     </div>
-  </nav>
-<br>
-<br>
 
-<div id="loading-spinner">
-  <img src="https://espacial.ifrn.edu.br/wp-content/uploads/2022/08/cropped-cropped-ct-espacial-logo-horizontal-completo_Prancheta-1-1-1536x507.png" alt="Logo" style="width: 200px;">
-</div>
+    <div id="planetas-container">
+
+    </div>
 
 
-<div class="planeta">
-  <div class="iframe-container">
-    <iframe src="https://solarsystem.nasa.gov/gltf_embed/2369&#39" width="100%" height="450px" frameborder="0" onload="checkAllIframesLoaded()" loading="lazy"></iframe>
-  </div>
-  <center><p style="color:white;">Mercúrio<a class="reference" href="">
-    <br>
+    <div id="modelContainer" style="width: 500px; height: 500px;">
+        <model-viewer id="myModel"
+                      src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                      ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
+                      alt="Um modelo 3D do astronauta para manipulação dentro do espaço"
+                      ar
+                      auto-rotate
+                      camera-controls>
+        </model-viewer>
+      </div>
 
-    <a class="btn btn-primary" href="" target="_blank">
-      <i class="fa-solid fa-qrcode"></i>
-    </a>
-  </a>
-  </p>
+      
+      
+      <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      
+      <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/qrious@4.0.2/dist/qrious.min.js"></script>
 
- 
-</center>
-  <br>
-  <br>
-  <br>
-</div>
-
-<div class="planeta">
-  <div class="iframe-container">
-    <iframe src="https://solarsystem.nasa.gov/gltf_embed/2343&#39" width="100%" height="450px" frameborder="0" onload="checkAllIframesLoaded()" loading="lazy"></iframe>
-  </div>
-  <center>
-    <p style="color:white;">Venus<a class="reference" href="">
-      <br>
-      <a class="btn btn-primary" href="" target="_blank">
-        <i class="fa-solid fa-qrcode"></i>
-      </a>
-
-    </a>
-    </p>
-  </center>
-  <br>
-  <br>
-  <br>
-</div>
-
-<div class="planeta">
-  <div class="iframe-container">
-    <iframe src="https://solarsystem.nasa.gov/gltf_embed/2393&#39" width="100%" height="450px" frameborder="0" onload="checkAllIframesLoaded()" loading="lazy"></iframe>
-  </div>
-  <center><p style="color:white;">Terra<a class="reference" href="">
-    <br>
-      <a class="btn btn-primary" href="" target="_blank">
-        <i class="fa-solid fa-qrcode"></i>
-      </a>
-  </a>
-</p>
-</center>
-  <br>
-  <br>
-  <br>
-</div>
-
-<div class="planeta">
-  <div class="iframe-container">
-    <iframe src="https://solarsystem.nasa.gov/gltf_embed/2372&#39" width="100%" height="450px" frameborder="0" onload="checkAllIframesLoaded()" loading="lazy"></iframe>
-  </div>
-  <center><p style="color:white;">Marte<a class="reference" href="">
-    <br>
-    <a class="btn btn-primary" href="" target="_blank">
-      <i class="fa-solid fa-qrcode"></i>
-    </a>
-  </a>
-</p>
-</center>
-  <br>
-  <br>
-  <br>
-</div>
-
-<div class="planeta">
-  <div class="iframe-container">
-    <iframe src="https://solarsystem.nasa.gov/gltf_embed/2375&#39" width="100%" height="450px" frameborder="0" onload="checkAllIframesLoaded()" loading="lazy"></iframe>
-  </div>
-  <center><p style="color:white;">Júpiter<a class="reference" href="">
-    <br>
-    <a class="btn btn-primary" href="" target="_blank">
-      <i class="fa-solid fa-qrcode"></i>
-    </a>
-  </a>
-</p>
-</center>
-  <br>
-  <br>
-  <br>
-</div>
-
-<div class="planeta">
-  <div class="iframe-container">
-    <iframe src="https://solarsystem.nasa.gov/gltf_embed/2355&#39" width="100%" height="450px" frameborder="0" onload="checkAllIframesLoaded()" loading="lazy"></iframe>
-  </div>
-  <center>
-    <p style="color:white;">Saturno<a class="reference" href="">
-      <br>
-      <a class="btn btn-primary" href="" target="_blank">
-        <i class="fa-solid fa-qrcode"></i>
-      </a>
-  </a>
-</p>
-</center>
-  <br>
-  <br>
-  <br>
-</div>
-
-<div class="planeta">
-  <div class="iframe-container">
-    <iframe src="https://solarsystem.nasa.gov/gltf_embed/2344&#39" width="100%" height="450px" frameborder="0" onload="checkAllIframesLoaded()" loading="lazy"></iframe>
-  </div>
-  <center>
-    <p style="color:white;">Urano<a class="reference" href="">
-      <br>
-      <a class="btn btn-primary" href="" target="_blank">
-        <i class="fa-solid fa-qrcode"></i>
-      </a>
-  </a>
-</p>
-</center>
-  <br>
-  <br>
-  <br>
-</div>
-
-<div class="planeta">
-  <div class="iframe-container">
-    <iframe src="https://solarsystem.nasa.gov/gltf_embed/2364&#39" width="100%" height="450px" frameborder="0" onload="checkAllIframesLoaded()" loading="lazy"></iframe>
-  </div>
-  <center>
-    <p style="color:white;">Netuno<a class="reference" href="">
-    <br>
-    <a class="btn btn-primary" href="" target="_blank">
-      <i class="fa-solid fa-qrcode"></i>
-    </a>
-    </a>
-    </p>
-  </center>
-  <br>
-  <br>
-  <br>
-</div>
-    
-<!--Adicionar verificação para saber se o dispositivo suporta realidade aumentada-->
-
-<!--Organizar dados para uma API, adicionar os métodos e outras funções para que suporte os verbos GET, POST-->
-
-<div id="modelContainer" style="width: 500px; height: 500px;">
-  <model-viewer id="myModel"
-                src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
-                ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
-                alt="Um modelo 3D do astronauta para manipulação dentro do espaço"
-                ar
-                auto-rotate
-                camera-controls>
-  </model-viewer>
-</div>
-
-<script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-
-<script src="move.js"></script>
-<script src="script.js"></script>
+      
+      <script src="Scripts/planets.js"></script>
+      <script src="Scripts/move.js"></script>
+      <script src="Scripts/script.js"></script>
 
 
-<!--Adicionar verificação para saber se o dispositivo suporta realidade aumentada -->
+     
+
+
+      
     
 
-
-
-
-
-
-<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
-
-
-
-
+</body>
+</html>
