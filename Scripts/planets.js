@@ -3,11 +3,11 @@ const planetas = [
     { nome: 'Mercúrio', url: 'https://solarsystem.nasa.gov/gltf_embed/2369&#39', qrCodeUrl: './QrCodes/mercury_qr.png'},
     { nome: 'Vênus', url: 'https://solarsystem.nasa.gov/gltf_embed/2343&#39', qrCodeUrl: './QrCodes/venus_qr.png'},
     { nome: 'Terra', url: 'https://solarsystem.nasa.gov/gltf_embed/2393&#39', qrCodeUrl: './QrCodes/earth.png'},
-    { nome: 'Marte', url: 'https://solarsystem.nasa.gov/gltf_embed/2372&#39' , qrCodeUrl: './QrCodes/' },
+    { nome: 'Marte', url: 'https://solarsystem.nasa.gov/gltf_embed/2372&#39' , qrCodeUrl: './QrCodes/mars_qr.png' },
     { nome: 'Júpiter', url: 'https://solarsystem.nasa.gov/gltf_embed/2375&#39' , qrCodeUrl: './QrCodes/'},
-    { nome: 'Saturno', url: 'https://solarsystem.nasa.gov/gltf_embed/2355&#39' , qrCodeUrl: './QrCodes/'},
-    { nome: 'Urano', url: 'https://solarsystem.nasa.gov/gltf_embed/2344&#39' , qrCodeUrl: './QrCodes/'},
-    { nome: 'Netuno', url: 'https://solarsystem.nasa.gov/gltf_embed/2364&#39' , qrCodeUrl: './QrCodes/'}
+    { nome: 'Saturno', url: 'https://solarsystem.nasa.gov/gltf_embed/2355&#39' , qrCodeUrl: './QrCodes/saturn_qr.png'},
+    { nome: 'Urano', url: 'https://solarsystem.nasa.gov/gltf_embed/2344&#39' , qrCodeUrl: './QrCodes/uran_qr.png'},
+    { nome: 'Netuno', url: 'https://solarsystem.nasa.gov/gltf_embed/2364&#39' , qrCodeUrl: './QrCodes/netun_qrcode'}
 
 
     // Adicione informações para os outros planetas aqui
