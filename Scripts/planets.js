@@ -7,7 +7,7 @@ const planetas = [
     { nome: 'Júpiter', url: 'https://solarsystem.nasa.gov/gltf_embed/2375&#39' , qrCodeUrl: './QrCodes/'},
     { nome: 'Saturno', url: 'https://solarsystem.nasa.gov/gltf_embed/2355&#39' , qrCodeUrl: './QrCodes/saturn_qr.png'},
     { nome: 'Urano', url: 'https://solarsystem.nasa.gov/gltf_embed/2344&#39' , qrCodeUrl: './QrCodes/uran_qr.png'},
-    { nome: 'Netuno', url: 'https://solarsystem.nasa.gov/gltf_embed/2364&#39' , qrCodeUrl: './QrCodes/netun_qrcode'}
+    { nome: 'Netuno', url: 'https://solarsystem.nasa.gov/gltf_embed/2364&#39' , qrCodeUrl: './QrCodes/netun_qrcode.png'}
 
 
     // Adicione informações para os outros planetas aqui
