@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Visualizador de Modelo 3D</title>
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+</head>
+<body>
+    <canvas id="renderCanvas"></canvas>
+    <script>
+        // Dentro da tag <script> no corpo da página
+
+// Obtém uma referência para o elemento canvas onde a cena será renderizada
+var canvas = document.getElementById("renderCanvas");
+
+// Cria uma engine Babylon.js
+var engine = new BABYLON.Engine(canvas, true);
+
+// Cria uma cena
+var scene = new BABYLON.Scene(engine);
+
+// Cria uma câmera
+var camera = new BABYLON.ArcRotateCamera("camera", -Math.PI / 2, Math.PI / 2, 3, new BABYLON.Vector3(0, 0, 0), scene);
+camera.attachControl(canvas, true);
+
+// Carrega o modelo GLTF
+BABYLON.SceneLoader.ImportMesh("", "./male_body.glb", "", scene, function (newMeshes) {
+    // O modelo foi carregado, você pode adicionar qualquer lógica adicional aqui
+
+    // Posicione o modelo ou faça outras manipulações, se necessário
+
+    // Inicia a renderização da cena
+    engine.runRenderLoop(function () {
+        scene.render();
+    });
+});
+    </script>
+</body>
+</html>

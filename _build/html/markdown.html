@@ -142,7 +142,7 @@ const thebe_selector_output = ".output, .cell_output"
     
     
     <img src="_static/images/cv.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="_static/pele.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <script>document.write(`<img src="_static/images/cv.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
   
   
 </a></div>
@@ -416,6 +416,19 @@ document.write(`
 </model-viewer>
 
 </center>
+
+<h3>Exibindo Gráficos 3D - Babylon.js</h3>
+<p> Babylon.js é uma engine 3D de código aberto e um framework para criar aplicações e jogos 3D baseados na web usando JavaScript e WebGL. Ele permite que desenvolvedores criem experiências 3D imersivas e interativas que podem ser executadas diretamente em navegadores da web, sem a necessidade de plugins ou instalações adicionais de software. Aqui estão algumas características e conceitos-chave associados ao Babylon.js</p>
+
+<p> O Babylon.js é uma biblioteca versatil que permite a vizualização de arquivos em diversos como formatos como GLTB, GLB e do tipo object. 
+
+<center>
+
+  <canvas id="renderCanvas"></canvas>  
+
+</center>
+
+
 </section>
 
 
@@ -440,9 +453,57 @@ document.write(`
         predefinedOutput: true
     }
     </script>
+
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+    <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
+
     <script>kernelName = 'python3'</script>
 
+    <script>
+              // Dentro da tag <script> no corpo da página
+
+        // Obtém uma referência para o elemento canvas onde a cena será renderizada
+        var canvas = document.getElementById("renderCanvas");
+        canvas.style.backgroundColor = "transparent";
+
+
+        // Cria uma engine Babylon.js
+        var engine = new BABYLON.Engine(canvas, true);
+
+        // Cria uma cena
+        var scene = new BABYLON.Scene(engine);
+
+        scene.clearColor = new BABYLON.Color4(0, 0, 0, 0); // O último valor (0) é a transparência (alpha)
+
+
+        
+        // Cria uma câmera
+        var camera = new BABYLON.ArcRotateCamera("camera", -Math.PI / 2, Math.PI / 2, 3, new BABYLON.Vector3(0, 0, 0), scene);
+        camera.attachControl(canvas, true);
+
+        // Carrega o modelo GLTF
+        BABYLON.SceneLoader.ImportMesh("", "./coracao.glb", "", scene, function (newMeshes) {
+          // O modelo foi carregado, você pode adicionar qualquer lógica adicional aqui
+              newMeshes.forEach(function (mesh) {
+
+            mesh.scaling = new BABYLON.Vector3(4, 4, 4); // Ajuste os valores conforme necessário
+
+           
+        
+        });
+
+          // Posicione o modelo ou faça outras manipulações, se necessário
+
+          // Inicia a renderização da cena
+          engine.runRenderLoop(function () {
+              scene.render();
+          });
+        });
+  </script>
+
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+   
 
                 </article>
               
