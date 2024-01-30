@@ -342,7 +342,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Desenvolvimento</h1>
+    <h1>BIOAR</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -378,7 +378,7 @@ document.write(`
   <img src="_static/images/fluxo.png">
 </center>
 
-<h3> Desenvolvimento em Nuvem - Github Codespaces</h3>
+<h3>Pesquisa e Desenvolvimento</h3>
 <p>GitHub Codespaces é uma ferramenta que permite o desenvolvimento em nuvem diretamente do GitHub. Ele oferece um ambiente de desenvolvimento completo, baseado na nuvem, onde os desenvolvedores podem escrever, testar e implantar código de maneira eficiente, sem a necessidade de configurar e manter um ambiente de desenvolvimento local complexo.</p>
 <p>O uso do GitHub Codespace foi necessário devido aos altos níveis de recursos que são demandados da máquina em termos de processamento e exibição de gráficos 3D. Com o Github Codespaces foi possível fazer o teste de diversas tecnologias em um ambiente de desenvolvimento em nuvem acessível</p>
 
@@ -405,33 +405,9 @@ document.write(`
 
 
 
-<h3>Incluindo Modelos 3D no HTML - Model Viewer e ArCore</h3>
+<h3>Expo e React Native - Democratizando o desenvolvimento</h3>
 
 
-<p> O  model-viewer componente web pode ser usado para visualizar e interagir com modelos 3D na web, e faz uma transição perfeita para colocar e interagir com esses modelos 3D em Realidade Aumentada na web. </p>
-<p>O ARCore é uma plataforma de realidade aumentada (RA) desenvolvida pela Google para dispositivos Android. Ela permite que os desenvolvedores criem aplicativos de realidade aumentada que podem interagir com o ambiente físico ao seu redor, adicionando objetos virtuais, informações ou interações a ele. O ARCore foi projetado para dispositivos Android e está disponível em muitos smartphones e tablets Android modernos.</p>
-<p>Quando visualizado em um dispositivo Android compatível com ARCore, um componente com o aratributo exibe um botão conforme mostrado no exemplo a seguir</p>
-<center>
-<model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
-              ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
-              alt="A 3D model of an astronaut"
-              ar
-              auto-rotate
-              camera-controls>
-</model-viewer>
-
-</center>
-
-<h3>Exibindo Gráficos 3D - Babylon.js</h3>
-<p> Babylon.js é uma engine 3D de código aberto e um framework para criar aplicações e jogos 3D baseados na web usando JavaScript e WebGL. Ele permite que desenvolvedores criem experiências 3D imersivas e interativas que podem ser executadas diretamente em navegadores da web, sem a necessidade de plugins ou instalações adicionais de software. Aqui estão algumas características e conceitos-chave associados ao Babylon.js</p>
-
-<p> O Babylon.js é uma biblioteca versatil que permite a vizualização de arquivos em diversos como formatos como GLTB, GLB e do tipo object. 
-
-<center>
-
-  <canvas id="renderCanvas"></canvas>  
-
-</center>
 
 
 </section>
@@ -465,51 +441,7 @@ document.write(`
 
     <script>kernelName = 'python3'</script>
 
-    <script>
-              // Dentro da tag <script> no corpo da página
-
-        // Obtém uma referência para o elemento canvas onde a cena será renderizada
-        var canvas = document.getElementById("renderCanvas");
-        canvas.style.backgroundColor = "transparent";
-
-
-        // Cria uma engine Babylon.js
-        var engine = new BABYLON.Engine(canvas, true);
-
-        // Cria uma cena
-        var scene = new BABYLON.Scene(engine);
-
-        scene.clearColor = new BABYLON.Color4(0, 0, 0, 0); // O último valor (0) é a transparência (alpha)
-
-
-        
-        // Cria uma câmera
-        var camera = new BABYLON.ArcRotateCamera("camera", -Math.PI / 2, Math.PI / 2, 3, new BABYLON.Vector3(0, 0, 0), scene);
-        camera.attachControl(canvas, true);
-
-        // Carrega o modelo GLTF
-        BABYLON.SceneLoader.ImportMesh("", "./coracao.glb", "", scene, function (newMeshes) {
-          // O modelo foi carregado, você pode adicionar qualquer lógica adicional aqui
-              newMeshes.forEach(function (mesh) {
-
-                
-
-            mesh.scaling = new BABYLON.Vector3(4, 4, 4); // Ajuste os valores conforme necessário
-
-           
-        
-        });
-
-          // Posicione o modelo ou faça outras manipulações, se necessário
-
-          // Inicia a renderização da cena
-          engine.runRenderLoop(function () {
-              scene.render();
-          });
-        });
-  </script>
-
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+   
    
 
                 </article>
