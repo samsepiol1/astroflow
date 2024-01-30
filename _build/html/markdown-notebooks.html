@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Desenvolvimento &#8212; Desenvolvendo em Nuvem</title>
+    <title>Astroflow &#8212; My sample book</title>
   
   
   
@@ -61,11 +61,10 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'markdown';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
-    <link rel="prev" title="Astroflow" href="intro.html" />
+    <link rel="next" title="Markdown Files" href="markdown.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -131,7 +130,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item">
   
 
-<a class="navbar-brand logo" href="intro.html">
+<a class="navbar-brand logo" href="#">
   
   
   
@@ -141,8 +140,8 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-  <img src="_static/images/if.png" class="logo__image only-light" alt="Logo image"/>
-  <script>document.write(`<img src="_static/images/cv.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="_static/images/if.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/images/cv.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
   
   
 </a></div>
@@ -150,15 +149,20 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="intro.html">
+            <li class="toctree-l1 current active">
+                <a class="reference internal" href="#">
                     AstroFlow
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Desenvolvimento</a></li>
-<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="markdown.html">Desenvolvimento</a></li>
+
+
+
+
+
+
 </ul>
 
     </div>
@@ -213,7 +217,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/samsepiol1/player-value-market" target="_blank"
+      <li><a href="https://github.com/samsepiol1/astroflow" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -223,14 +227,14 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="btn__icon-container">
   <i class="fab fa-github"></i>
   </span>
-<span class="btn__text-container">Repository</span>
+<span class="btn__text-container">Repositório</span>
 </a>
 </li>
       
       
       
       
-      <li><a href="https://github.com/samsepiol1/player-value-market/issues/new?title=Issue%20on%20page%20%2Fmarkdown.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/samsepiol1/player-value-market/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -260,7 +264,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="_sources/markdown.md" target="_blank"
+      <li><a href="_sources/intro.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -348,15 +352,15 @@ document.write(`
         <div id="jb-print-toc">
             
             <div>
-                <h2> Conteúdo</h2>
+                <h2> Conteúdo </h2>
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-myst">What is MyST?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-roles-and-directives">Sample Roles and Directives</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citations">Citations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learn-more">Learn more</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">AstroFlow</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#desenvolvedor">Desenvolvedor</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tecnologias">Tecnologias</a></li>
 </ul>
+
             </nav>
         </div>
     </div>
@@ -367,54 +371,64 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="markdown-files">
-<h1>Como foi o desenvolvimento?<a class="headerlink" href="#markdown-files" title="Permalink to this heading">#</a></h1>
-<p>O desenvolvimento do AstroFlow só foi possível devido aos avanços das tecnologias de aplicações em nuvem e também da área de realidade aumentada.</p>
+<section id="api-de-gerenciamento-de-jogadores">
+<h1>AstroFlow<a class="headerlink" href="#api-de-gerenciamento-de-jogadores" title="Permalink to this heading">#</a></h1>
+<p>Na página inicial, os visitantes podem explorar planetas do nosso sistema solar em 3D. Cada planeta é representado com detalhes realistas, permitindo que os usuários girem, aproximem e afastem para obter uma visão completa.</p>
+<p>Ao escanear um QR code específico, os usuários podem visualizar em tempo real um modelo 3D do corpo humano em realidade aumentada. Você poderá explorar o sistema circulatório do corpo e, em particular, visualizar a quantidade de sangue concentrado nos membros inferiores e superiores.</p>
 
+<section id="desenvolvedor">
+<h1>Idealizador<a class="headerlink" href="#desenvolvedor" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li> <p>Prof.Dr Airton Araujo de Souza Junior</p> 
+ 
+</li>
+<p> Possui graduação em Ciências Biológicas/Bacharelado pela Universidade Federal do Rio Grande do Norte (1999) e graduação em Ciências Biológicas/Licenciatura pela mesma instituição (2007). Posteriormente, obteve mestrado em Ciências Biológicas, com ênfase em Biologia Molecular, pela Universidade Federal de São Paulo (2014), desenvolvendo pesquisas nos temas de Anticoagulante, Heparina, GAGs e Biotecnologia. Em seguida, concluiu o doutorado em Bioquímica na UFRN (2023). Atualmente, desempenha o cargo de professor de Biologia e da pós-graduação no Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte, no Campus Parnamirim. Na área de Educação, atua na Pós-Graduação em Ensino de Ciências Naturais e Matemática do IFRN, onde adquiriu experiência em metodologias como o Ensino Híbrido, com foco em Sala de Aula Invertida e gamificação, Ensino Remoto, EaD e realidade aumentada aplicada ao ensino.
+ </p>
+  
 
-<h3>Fluxo de Desenvolvimento - Desenvolvimento Ágil</h3>
+   <a href="http://lattes.cnpq.br/5983568041476035"><img src="https://hc.unicamp.br/wp-content/uploads/2020/04/icon-lattes.png" height=25 width=25 style="display: inline-block;"></a>
+  
 
-<center>
-  <img src="_static/images/fluxo.png">
-</center>
+</ul>
+</section>  
+</section>
+<section id="desenvolvedor">
+<h1>Desenvolvedor<a class="headerlink" href="#desenvolvedor" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>Lucas Matheus (1uc4s_m4theus) </p> 
+ 
+</li>
+  <p> Atualmente é Estudante de Sistemas Para Internet No IFRN - Campus Parnamirim. Tem experiência na área de Divulgação Científica, com ênfase em Segurança da Informação. Participante no projeto SpaceVant II - Sistema Multi-VANTs para Varredura e Coleta de Dados em Áreas de Missões Espaciais na linha de pesquisa de Tecnologias 5G e Arquiteturas de Alta Disponibilidade. Também atua como bolsista pesquisador no projeto "Desenvolvimento de Aplicativo para realidade aumentada no ensino de biologia" com o intuito do desenvolvimento de uma aplicação de realidade misturada com foco nas áreas aeroespacial e educacional. Atuei como desenvolvedor backend no projeto: "Tecnologia da informação aplicada ao contexto da Policia Rodoviária Federal" uma colaboração entre a UFRN e a PRF.</p>
 
-<h3>Pesquisa e Desenvolvimento</h3>
-<p>GitHub Codespaces é uma ferramenta que permite o desenvolvimento em nuvem diretamente do GitHub. Ele oferece um ambiente de desenvolvimento completo, baseado na nuvem, onde os desenvolvedores podem escrever, testar e implantar código de maneira eficiente, sem a necessidade de configurar e manter um ambiente de desenvolvimento local complexo.</p>
-<p>O uso do GitHub Codespace foi necessário devido aos altos níveis de recursos que são demandados da máquina em termos de processamento e exibição de gráficos 3D. Com o Github Codespaces foi possível fazer o teste de diversas tecnologias em um ambiente de desenvolvimento em nuvem acessível</p>
+   <a href="https://www.linkedin.com/in/lucas-matheus-3809aa121/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" height=25 width=25 style="display: inline-block; margin-right: 10px;">
+   <a href="http://lattes.cnpq.br/8277028616542734"><img src="https://hc.unicamp.br/wp-content/uploads/2020/04/icon-lattes.png" height=25 width=25 style="display: inline-block;"></a>
 
-<img src="https://docs.github.com/assets/cb-77061/images/help/codespaces/codespaces-diagram.png">
-
-
-
-
-<p>
-  Quando você cria um codespace, um clone superficial é feito do repositório ou do repositório de modelos quando a criação do codespace é feita com base em um modelo. O repositório é clonado para uma máquina virtual do Linux dedicada e privada para você. Ter uma VM dedicada garante que você tenha todo o conjunto de recursos de computação daquela máquina disponível para você. Se necessário, isso também permite que você tenha acesso total à raiz do seu contêiner.
-</p>
-<p>
-  Imagine um ambiente de desenvolvimento perfeito, sempre disponível onde quer que você esteja. O GitHub Codespaces torna isso realidade. Em vez de configurar manualmente seu ambiente de desenvolvimento em cada máquina, você pode simplesmente acessar a nuvem. Com um único clique, você é transportado para um espaço de trabalho de desenvolvimento pronto para uso, completo com todas as ferramentas, bibliotecas e configurações necessárias para o seu projeto. Isso significa que não importa se você está no seu computador de casa, em um café ou em um escritório remoto, seu ambiente de desenvolvimento é sempre consistente e pronto para uso. A colaboração com outros desenvolvedores se torna mais fácil, e você pode focar no código em vez de gastar tempo em configurações complexas.
-</p>
-
-
-<h3> Fazendo o navegador exibir imagens em 3D - WebXr API </h3>
-
-<p>A API do dispositivo WebXR fornece acesso a dispositivos de realidade virtual e realidade aumentada em navegadores da web compatíveis. É um produto do Immersive Web Community Group , que conta com colaboradores do Google, Microsoft, Mozilla e outros. O “X” em XR representa qualquer coisa no espectro de experiências imersivas.</p>
-<p>O módulo de Realidade Aumentada do WebXR permite que o conteúdo virtual seja alinhado com o ambiente do mundo real antes de ser exibido aos usuários. WebXR usa ARCore para potencializar experiências de AR no navegador Google Chrome em dispositivos Android.iniciar</p>
-<p>A API de Dispositivo WebXR é para acessar dispositivos de REALIDADE Virtual (VR) e AR (realidade aumentada), incluindo sensores e telas montadas na cabeça, na Web. A API de Dispositivo WebXR está disponível no Microsoft Edge e no Chrome versão 79 e versões posteriores dão suporte a WebXR como padrão. Você pode marcar o status de suporte mais recente do navegador para WebXR</p>
-<img src="https://wonderlandengine.com/about/webxr/browser-based-xr-app-layers_hu78a11abfea7f94f5698e880f29d65c6c_58761_674x0_resize_catmullrom_3.png">
-
-
-
-
-<h3>Expo e React Native - Democratizando o desenvolvimento</h3>
-
-
-
-
+</ul>
 </section>
 
+<section id="realidade_aumentada">
+  <h1>Por que usar realidade aumentada?<a class="headerlink" href="#desenvolvedor" title="Permalink to this heading">#</a></h1>
+
+<p>Nesse momento, você não está apenas aprendendo sobre os planetas ou o corpo humano; você está interagindo com eles. Ao escanear um QR code específico, um modelo tridimensional do corpo humano é projetado em sua tela em tempo real. Você pode ver órgãos, sistemas e, em particular, visualizar a quantidade de sangue concentrado nos membros superiores e inferiores.</p>
+<p>Essa visualização traz à vida conceitos abstratos. Você pode explorar o funcionamento interno do corpo humano, observando como o sangue flui através das veias e artérias, tudo em tempo real. A aprendizagem se torna uma experiência prática e concreta.</p>
+<p>A realidade aumentada envolvente mantém você engajado e motivado a explorar mais. É uma fusão de ciência, tecnologia e entretenimento, projetada para estimular a curiosidade e o aprendizado</p>
+</section>
+
+<section id="tecnologias">
+<h1>Tecnologias<a class="headerlink" href="#tecnologias" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>React Native</p></li>
+<li><p>Expo</p></li>
+<li><p>MindAR.js</p></li>
+<li><p>Jupyter Book (0.15.1) - Documentação</p></li>
+<li><p>Sphnix (5.0.2) - Documentação</p></li>
+</ul>
 
 
 
+<div class="toctree-wrapper compound">
+</div>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -434,15 +448,7 @@ document.write(`
         predefinedOutput: true
     }
     </script>
-
-    <script src="https://cdn.babylonjs.com/babylon.js"></script>
-    <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
-    <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
-
     <script>kernelName = 'python3'</script>
-
-   
-   
 
                 </article>
               
@@ -455,21 +461,12 @@ document.write(`
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="intro.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">AstroFlow</p>
-      </div>
-    </a>
     <a class="right-next"
-       href="markdown-notebooks.html"
+       href="markdown.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Notebooks with MyST Markdown</p>
+        <p class="prev-next-title">Markdown Files</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -491,7 +488,11 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Astroflow</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#desenvolvedor">Desenvolvedor</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tecnologias">Tecnologias</a></li>
 </ul>
+
   </nav></div>
 
 </div></div>
