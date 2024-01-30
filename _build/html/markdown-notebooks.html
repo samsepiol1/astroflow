@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Endpoints &#8212; My sample book</title>
+    <title>Desenvolvimento &#8212; Desenvolvendo em Nuvem</title>
   
   
   
@@ -61,10 +61,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'markdown-notebooks';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'markdown';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Markdown Files" href="markdown.html" />
+    <link rel="next" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
+    <link rel="prev" title="Astroflow" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -140,9 +141,8 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="_static/images/cv.png" class="logo__image only-light" alt="Logo image"/>
-
-    <script>document.write(`<img src="_static/images/cv.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  <img src="_static/images/if.png" class="logo__image only-light" alt="Logo image"/>
+  <script>document.write(`<img src="_static/images/cv.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
   
   
 </a></div>
@@ -152,18 +152,13 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    Astroflow
+                    AstroFlow
                 </a>
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Endpoints</a></li>
-
-
-
-
-
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Desenvolvimento</a></li>
+<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 </ul>
 
     </div>
@@ -235,7 +230,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/samsepiol1/player-value-market/issues/new?title=Issue%20on%20page%20%2Fmarkdown-notebooks.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/samsepiol1/player-value-market/issues/new?title=Issue%20on%20page%20%2Fmarkdown.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -265,7 +260,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="_sources/markdown-notebooks.md" target="_blank"
+      <li><a href="_sources/markdown.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -347,32 +342,21 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Endpoints</h1>
+    <h1>Desenvolvimento</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
             <div>
-                <h2> Contents </h2>
+                <h2> Conteúdo</h2>
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Endpoints</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obter-todas-as-informacoes-dos-jogadores">Obter todas as informações dos jogadores</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obter-informacoes-de-um-jogador-especifico">Obter informações de um jogador específico</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adicionar-um-novo-jogador">Adicionar um novo jogador</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-myst">What is MyST?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-roles-and-directives">Sample Roles and Directives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citations">Citations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learn-more">Learn more</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#remove-um-jogador">Remove um jogador.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#retorna-informacoes-de-performance-de-um-jogador">Retorna informações de performance de um jogador.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#adicionar-informacoes-de-performance-para-um-jogador">Adicionar informações de performance para um jogador</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#atualizar-informacoes-de-performance-de-um-jogador">Atualizar informações de performance de um jogador</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#remove-informacoes-de-performance-de-um-jogador">Remove informações de performance de um jogador.</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obtem-informacoes-de-transferencias-de-um-jogador">Obtém informações de transferências de um jogador.</a></li>
-</ul>
-</li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -383,199 +367,78 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="endpoints">
-<h1>Endpoints<a class="headerlink" href="#endpoints" title="Permalink to this heading">#</a></h1>
-<section id="obter-todas-as-informacoes-dos-jogadores">
-<h2>Obter todas as informações dos jogadores<a class="headerlink" href="#obter-todas-as-informacoes-dos-jogadores" title="Permalink to this heading">#</a></h2>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">GET</span><span class="w"> </span><span class="o">/</span><span class="nx">player</span>
-</pre></div>
-</div>
-<p><strong>Códigos de status:</strong></p>
-<ul class="simple">
-<li><p>200: Sucesso ✅</p></li>
-<li><p>404: Não encontrado 🚫</p></li>
-</ul>
-</section>
-<section id="obter-informacoes-de-um-jogador-especifico">
-<h2>Obter informações de um jogador específico<a class="headerlink" href="#obter-informacoes-de-um-jogador-especifico" title="Permalink to this heading">#</a></h2>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">GET</span><span class="w"> </span><span class="o">/</span><span class="nx">player</span><span class="o">/</span><span class="p">{</span><span class="nx">id</span><span class="p">}</span>
-</pre></div>
-</div>
-<p><strong>Parâmetros:</strong></p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">id</span></code> (int): ID do jogador</p></li>
-</ul>
-<p><strong>Códigos de status:</strong></p>
-<ul class="simple">
-<li><p>200: Sucesso</p></li>
-<li><p>404: Não encontrado</p></li>
-</ul>
-</section>
-<section id="adicionar-um-novo-jogador">
-<h2>Adicionar um novo jogador<a class="headerlink" href="#adicionar-um-novo-jogador" title="Permalink to this heading">#</a></h2>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">POST</span><span class="w"> </span><span class="o">/</span><span class="nx">player</span>
-</pre></div>
-</div>
-<p><strong>Cabeçalho:</strong></p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="o">-</span><span class="w"> </span><span class="sb">`Content-Type: application/json`</span>
-</pre></div>
-</div>
-<p><strong>Corpo da solicitação (JSON):</strong></p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;nome&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Nome do jogador&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;data_nascimento&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Data de nascimento do jogador&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;nacionalidade&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Nacionalidade do jogador&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;posicao&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Posição do jogador&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;altura&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1.80</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;peso&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">75.5</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;contrato_atual&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Contrato atual do jogador&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;salario_atual&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">5000.00</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-<p><strong>Códigos de status</strong>:</p>
-<ul class="simple">
-<li><p>201: Jogador adicionado com sucesso 👍</p></li>
-</ul>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">PUT</span><span class="w"> </span><span class="o">/</span><span class="nx">player</span><span class="o">/</span><span class="p">{</span><span class="nx">id</span><span class="p">}</span>
-</pre></div>
-</div>
-<p>Parâmetros:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">id</span><span class="w"> </span><span class="p">(</span><span class="kr">int</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nx">ID</span><span class="w"> </span><span class="k">do</span><span class="w"> </span><span class="nx">jogador</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="nx">ser</span><span class="w"> </span><span class="nx">atualizado</span>
-<span class="nx">Cabeçalho</span><span class="o">:</span>
+  <section class="tex2jax_ignore mathjax_ignore" id="markdown-files">
+<h1>Como foi o desenvolvimento?<a class="headerlink" href="#markdown-files" title="Permalink to this heading">#</a></h1>
+<p>O desenvolvimento do AstroFlow só foi possível devido aos avanços das tecnologias de aplicações em nuvem e também da área de realidade aumentada.</p>
 
-<span class="nx">Content</span><span class="o">-</span><span class="nx">Type</span><span class="o">:</span><span class="w"> </span><span class="nx">application</span><span class="o">/</span><span class="nx">json</span>
-<span class="nx">Corpo</span><span class="w"> </span><span class="nx">da</span><span class="w"> </span><span class="nx">solicitação</span><span class="w"> </span><span class="p">(</span><span class="nb">JSON</span><span class="p">)</span><span class="o">:</span>
-</pre></div>
-</div>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;nome&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Novo nome do jogador&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;data_nascimento&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Nova data de nascimento do jogador&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;nacionalidade&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Nova nacionalidade do jogador&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;posicao&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Nova posição do jogador&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;altura&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1.85</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;peso&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">78.0</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;contrato_atual&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Novo contrato atual do jogador&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;salario_atual&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">5500.00</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-<p><strong>Códigos de status:</strong></p>
-<p>200: Informações do jogador atualizadas com sucesso ✅⚽</p>
-<p>404: Não encontrado 🚫⚽</p>
-</section>
-</section>
-<section id="remove-um-jogador">
-<h1>Remove um jogador.<a class="headerlink" href="#remove-um-jogador" title="Permalink to this heading">#</a></h1>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">DELETE</span><span class="w"> </span><span class="o">/</span><span class="nx">player</span><span class="o">/</span><span class="p">{</span><span class="nx">id</span><span class="p">}</span>
-</pre></div>
-</div>
-<p>Parâmetros:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">id</span><span class="w"> </span><span class="p">(</span><span class="kr">int</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nx">ID</span><span class="w"> </span><span class="k">do</span><span class="w"> </span><span class="nx">jogador</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="nx">ser</span><span class="w"> </span><span class="nx">removido</span>
-</pre></div>
-</div>
-<p><strong>Códigos de status:</strong></p>
-<p>200: Jogador removido com sucesso ✅⚽</p>
-<p>404: Não encontrado 🚫⚽</p>
-</section>
-<section id="retorna-informacoes-de-performance-de-um-jogador">
-<h1>Retorna informações de performance de um jogador.<a class="headerlink" href="#retorna-informacoes-de-performance-de-um-jogador" title="Permalink to this heading">#</a></h1>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">GET</span><span class="w"> </span><span class="o">/</span><span class="nx">performance</span><span class="o">/</span><span class="p">{</span><span class="nx">id</span><span class="p">}</span>
-</pre></div>
-</div>
-<p>Parâmetros:</p>
-<p>id (int): ID do jogador</p>
-<p><strong>Códigos de status</strong>:</p>
-<p>200: Sucesso ✅⚽
-404: Não encontrado 🚫⚽</p>
-</section>
-<section id="adicionar-informacoes-de-performance-para-um-jogador">
-<h1>Adicionar informações de performance para um jogador<a class="headerlink" href="#adicionar-informacoes-de-performance-para-um-jogador" title="Permalink to this heading">#</a></h1>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">POST</span><span class="w"> </span><span class="o">/</span><span class="nx">performance</span>
-</pre></div>
-</div>
-<p>Cabeçalho:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">Content</span><span class="o">-</span><span class="nx">Type</span><span class="o">:</span><span class="w"> </span><span class="nx">application</span><span class="o">/</span><span class="nx">json</span>
-</pre></div>
-</div>
-<p>Corpo da solicitação (JSON):</p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;id_jogador&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">123</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;gols_marcados&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;assistencias&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;jogos_disputados&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;minutos_jogados&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1800</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;chutes_a_gol&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;passes_completos&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">500</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;defesas&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;cartoes_amarelos&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;cartoes_vermelhos&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-</section>
-<section id="atualizar-informacoes-de-performance-de-um-jogador">
-<h1>Atualizar informações de performance de um jogador<a class="headerlink" href="#atualizar-informacoes-de-performance-de-um-jogador" title="Permalink to this heading">#</a></h1>
-<p><strong>Código de status</strong>:</p>
-<p>201: Informações de performance adicionadas com sucesso</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">PUT</span><span class="w"> </span><span class="o">/</span><span class="nx">performance</span><span class="o">/</span><span class="p">{</span><span class="nx">id</span><span class="p">}</span>
-</pre></div>
-</div>
-<p>Parâmetros:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">id</span><span class="w"> </span><span class="p">(</span><span class="kr">int</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nx">ID</span><span class="w"> </span><span class="k">do</span><span class="w"> </span><span class="nx">jogador</span>
-</pre></div>
-</div>
-<p>Cabeçalho:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">Content</span><span class="o">-</span><span class="nx">Type</span><span class="o">:</span><span class="w"> </span><span class="nx">application</span><span class="o">/</span><span class="nx">json</span>
 
-<span class="nx">Corpo</span><span class="w"> </span><span class="nx">da</span><span class="w"> </span><span class="nx">solicitação</span><span class="w"> </span><span class="p">(</span><span class="nb">JSON</span><span class="p">)</span><span class="o">:</span>
-</pre></div>
-</div>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;gols_marcados&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;assistencias&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;jogos_disputados&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;minutos_jogados&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2200</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;chutes_a_gol&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">40</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;passes_completos&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">600</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;defesas&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;cartoes_amarelos&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;cartoes_vermelhos&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span>
-<span class="p">}</span>
-</pre></div>
-</div>
+<h3>Fluxo de Desenvolvimento - Desenvolvimento Ágil</h3>
+
+<center>
+  <img src="_static/images/fluxo.png">
+</center>
+
+<h3> Desenvolvimento em Nuvem - Github Codespaces</h3>
+<p>GitHub Codespaces é uma ferramenta que permite o desenvolvimento em nuvem diretamente do GitHub. Ele oferece um ambiente de desenvolvimento completo, baseado na nuvem, onde os desenvolvedores podem escrever, testar e implantar código de maneira eficiente, sem a necessidade de configurar e manter um ambiente de desenvolvimento local complexo.</p>
+<p>O uso do GitHub Codespace foi necessário devido aos altos níveis de recursos que são demandados da máquina em termos de processamento e exibição de gráficos 3D. Com o Github Codespaces foi possível fazer o teste de diversas tecnologias em um ambiente de desenvolvimento em nuvem acessível</p>
+
+<img src="https://docs.github.com/assets/cb-77061/images/help/codespaces/codespaces-diagram.png">
+
+
+
+
+<p>
+  Quando você cria um codespace, um clone superficial é feito do repositório ou do repositório de modelos quando a criação do codespace é feita com base em um modelo. O repositório é clonado para uma máquina virtual do Linux dedicada e privada para você. Ter uma VM dedicada garante que você tenha todo o conjunto de recursos de computação daquela máquina disponível para você. Se necessário, isso também permite que você tenha acesso total à raiz do seu contêiner.
+</p>
+<p>
+  Imagine um ambiente de desenvolvimento perfeito, sempre disponível onde quer que você esteja. O GitHub Codespaces torna isso realidade. Em vez de configurar manualmente seu ambiente de desenvolvimento em cada máquina, você pode simplesmente acessar a nuvem. Com um único clique, você é transportado para um espaço de trabalho de desenvolvimento pronto para uso, completo com todas as ferramentas, bibliotecas e configurações necessárias para o seu projeto. Isso significa que não importa se você está no seu computador de casa, em um café ou em um escritório remoto, seu ambiente de desenvolvimento é sempre consistente e pronto para uso. A colaboração com outros desenvolvedores se torna mais fácil, e você pode focar no código em vez de gastar tempo em configurações complexas.
+</p>
+
+
+<h3> Fazendo o navegador exibir imagens em 3D - WebXr API </h3>
+
+<p>A API do dispositivo WebXR fornece acesso a dispositivos de realidade virtual e realidade aumentada em navegadores da web compatíveis. É um produto do Immersive Web Community Group , que conta com colaboradores do Google, Microsoft, Mozilla e outros. O “X” em XR representa qualquer coisa no espectro de experiências imersivas.</p>
+<p>O módulo de Realidade Aumentada do WebXR permite que o conteúdo virtual seja alinhado com o ambiente do mundo real antes de ser exibido aos usuários. WebXR usa ARCore para potencializar experiências de AR no navegador Google Chrome em dispositivos Android.iniciar</p>
+<p>A API de Dispositivo WebXR é para acessar dispositivos de REALIDADE Virtual (VR) e AR (realidade aumentada), incluindo sensores e telas montadas na cabeça, na Web. A API de Dispositivo WebXR está disponível no Microsoft Edge e no Chrome versão 79 e versões posteriores dão suporte a WebXR como padrão. Você pode marcar o status de suporte mais recente do navegador para WebXR</p>
+<img src="https://wonderlandengine.com/about/webxr/browser-based-xr-app-layers_hu78a11abfea7f94f5698e880f29d65c6c_58761_674x0_resize_catmullrom_3.png">
+
+
+
+
+<h3>Incluindo Modelos 3D no HTML - Model Viewer e ArCore</h3>
+
+
+<p> O  model-viewer componente web pode ser usado para visualizar e interagir com modelos 3D na web, e faz uma transição perfeita para colocar e interagir com esses modelos 3D em Realidade Aumentada na web. </p>
+<p>O ARCore é uma plataforma de realidade aumentada (RA) desenvolvida pela Google para dispositivos Android. Ela permite que os desenvolvedores criem aplicativos de realidade aumentada que podem interagir com o ambiente físico ao seu redor, adicionando objetos virtuais, informações ou interações a ele. O ARCore foi projetado para dispositivos Android e está disponível em muitos smartphones e tablets Android modernos.</p>
+<p>Quando visualizado em um dispositivo Android compatível com ARCore, um componente com o aratributo exibe um botão conforme mostrado no exemplo a seguir</p>
+<center>
+<model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+              ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
+              alt="A 3D model of an astronaut"
+              ar
+              auto-rotate
+              camera-controls>
+</model-viewer>
+
+</center>
+
+<h3>Exibindo Gráficos 3D - Babylon.js</h3>
+<p> Babylon.js é uma engine 3D de código aberto e um framework para criar aplicações e jogos 3D baseados na web usando JavaScript e WebGL. Ele permite que desenvolvedores criem experiências 3D imersivas e interativas que podem ser executadas diretamente em navegadores da web, sem a necessidade de plugins ou instalações adicionais de software. Aqui estão algumas características e conceitos-chave associados ao Babylon.js</p>
+
+<p> O Babylon.js é uma biblioteca versatil que permite a vizualização de arquivos em diversos como formatos como GLTB, GLB e do tipo object. 
+
+<center>
+
+  <canvas id="renderCanvas"></canvas>  
+
+</center>
+
+
 </section>
-<section id="remove-informacoes-de-performance-de-um-jogador">
-<h1>Remove informações de performance de um jogador.<a class="headerlink" href="#remove-informacoes-de-performance-de-um-jogador" title="Permalink to this heading">#</a></h1>
-<p><strong>Códigos de status</strong>:</p>
-<p>200: Informações de performance do jogador atualizadas com sucesso</p>
-<p>404: Não encontrado</p>
-<p>DELETE /performance/{id}</p>
-<p>Parâmetros:</p>
-<p>id (int): ID do jogador</p>
-<p>Códigos de status:</p>
-<p>200: Informações de performance do jogador removidas com sucesso
-404: Não Encontrado</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">GET</span><span class="w"> </span><span class="o">/</span><span class="nx">lesoes</span><span class="o">/</span><span class="p">{</span><span class="nx">id</span><span class="p">}</span>
-</pre></div>
-</div>
-<p>Parâmetros:</p>
-<p>id (int): ID do jogador</p>
-<p><strong>Códigos de status</strong>:</p>
-<p>200: Sucesso
-404: Não encontrado</p>
-<section id="obtem-informacoes-de-transferencias-de-um-jogador">
-<h2>Obtém informações de transferências de um jogador.<a class="headerlink" href="#obtem-informacoes-de-transferencias-de-um-jogador" title="Permalink to this heading">#</a></h2>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">GET</span><span class="w"> </span><span class="o">/</span><span class="nx">transferencias</span><span class="o">/</span><span class="p">{</span><span class="nx">id</span><span class="p">}</span>
-</pre></div>
-</div>
-<p>Parâmetros:</p>
-<p>id (int): ID do jogador</p>
-<p><strong>Códigos de status</strong>:</p>
-<p>200: Sucesso
-404: Não encontrado</p>
-</section>
-</section>
+
+
+
+
 
     <script type="text/x-thebe-config">
     {
@@ -595,7 +458,59 @@ document.write(`
         predefinedOutput: true
     }
     </script>
+
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+    <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
+
     <script>kernelName = 'python3'</script>
+
+    <script>
+              // Dentro da tag <script> no corpo da página
+
+        // Obtém uma referência para o elemento canvas onde a cena será renderizada
+        var canvas = document.getElementById("renderCanvas");
+        canvas.style.backgroundColor = "transparent";
+
+
+        // Cria uma engine Babylon.js
+        var engine = new BABYLON.Engine(canvas, true);
+
+        // Cria uma cena
+        var scene = new BABYLON.Scene(engine);
+
+        scene.clearColor = new BABYLON.Color4(0, 0, 0, 0); // O último valor (0) é a transparência (alpha)
+
+
+        
+        // Cria uma câmera
+        var camera = new BABYLON.ArcRotateCamera("camera", -Math.PI / 2, Math.PI / 2, 3, new BABYLON.Vector3(0, 0, 0), scene);
+        camera.attachControl(canvas, true);
+
+        // Carrega o modelo GLTF
+        BABYLON.SceneLoader.ImportMesh("", "./coracao.glb", "", scene, function (newMeshes) {
+          // O modelo foi carregado, você pode adicionar qualquer lógica adicional aqui
+              newMeshes.forEach(function (mesh) {
+
+                
+
+            mesh.scaling = new BABYLON.Vector3(4, 4, 4); // Ajuste os valores conforme necessário
+
+           
+        
+        });
+
+          // Posicione o modelo ou faça outras manipulações, se necessário
+
+          // Inicia a renderização da cena
+          engine.runRenderLoop(function () {
+              scene.render();
+          });
+        });
+  </script>
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+   
 
                 </article>
               
@@ -609,13 +524,22 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="markdown.html"
+       href="intro.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Markdown Files</p>
+        <p class="prev-next-title">AstroFlow</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="markdown-notebooks.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Notebooks with MyST Markdown</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div></div>
   
@@ -631,26 +555,11 @@ document.write(`
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
+    <i class="fa-solid fa-list"></i> Conteúdo
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Endpoints</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obter-todas-as-informacoes-dos-jogadores">Obter todas as informações dos jogadores</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obter-informacoes-de-um-jogador-especifico">Obter informações de um jogador específico</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adicionar-um-novo-jogador">Adicionar um novo jogador</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#remove-um-jogador">Remove um jogador.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#retorna-informacoes-de-performance-de-um-jogador">Retorna informações de performance de um jogador.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#adicionar-informacoes-de-performance-para-um-jogador">Adicionar informações de performance para um jogador</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#atualizar-informacoes-de-performance-de-um-jogador">Atualizar informações de performance de um jogador</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#remove-informacoes-de-performance-de-um-jogador">Remove informações de performance de um jogador.</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#obtem-informacoes-de-transferencias-de-um-jogador">Obtém informações de transferências de um jogador.</a></li>
-</ul>
-</li>
-</ul>
-
   </nav></div>
 
 </div></div>
